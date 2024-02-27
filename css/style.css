@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-blend-mode:color-dodge;
+    background: hsl(180, 100%, 23%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-xl {
+    font-size: 6rem;
+    background-image: radial-gradient(circle,  blanchedalmond, #19af9b);
+    color: transparent;
+    background-clip: text;
+}
