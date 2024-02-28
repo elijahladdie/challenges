@@ -9,7 +9,7 @@ const customApi = arr => {
                 }
             }
             resolve(arr);
-        }, 1000);
+        }, 5000);
     });
 };
 
@@ -17,7 +17,7 @@ async function testCustomApi() {
     try {
         const result = await customApi([
             { fatherName: 'John', motherName: 'Jane', childrenNumber: 2 },
-            { fatherName: 'Yves', motherName: 'Yvonne', childrenNumber: 1 }
+            { fatherName: 'Kalisa', motherName: 'Yvonne', childrenNumber: 1 }
         ]);
         console.log(result);
     } catch (error) {

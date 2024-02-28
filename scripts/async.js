@@ -2,6 +2,9 @@ const setStudentAgeApi = (student, age) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             student.age = age;
+            if(!Number(age)){
+                reject("Invalid number")
+            }
             if (age < 0)
                 reject("Bad Age");
             else
@@ -11,6 +14,6 @@ const setStudentAgeApi = (student, age) => {
 };
 
 const student = { name: "denis" }
-setStudentAgeApi(student, 90)
+setStudentAgeApi(student, "karim")
     .then(student => console.log(student))
     .catch(error => console.error(error));
