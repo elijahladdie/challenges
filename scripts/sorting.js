@@ -11,3 +11,4 @@ const customSort = (arr) => {
     return filtered.sort((a, b) => b - a);
 };
 customSort([1,2,3,4,5,6,7,8,9]);
+console.log()
